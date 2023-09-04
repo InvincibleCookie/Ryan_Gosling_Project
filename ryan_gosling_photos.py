@@ -1,6 +1,7 @@
 import random
 from PIL import Image
 
+
 def show_random_photo():
     photos = [
         "ken.png",

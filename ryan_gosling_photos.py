@@ -16,5 +16,13 @@ def show_random_photo():
     img.show()
 
 
+def show_specific_photo(photo_name):
+    try:
+        img = Image.open(photo_name)
+        img.show()
+    except Exception as e:
+        print(f"Произошла ошибка при открытии изображения: {e}")
+
+
 if __name__ == "__main__":
     show_random_photo()
